@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+</head>
+<body>
+    <form action="">
+        <p>
+            <label>
+                Estado:
+                <select name="estado" multiple> <!--o que estiver no value vai ser salvo no banco, selected para deixar marccado-->
+                    <option value="">Escolha um Estado</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </select>
+            </label>
+        </p>
+        <p>
+            <label>
+                Copa do Mundo:
+                <select name="copa">
+                    <optgroup label="Grupo A">
+                        <option value="Brasil">Brasil</option>
+                        <option value="Holanda">Holanda</option>
+                    </optgroup>
+                    <optgroup label="Grupo B">
+                        <option value="Argentina">Argentina</option>
+                        <option value="França">França</option>
+                    </optgroup>
+                </select>
+            </label>
+        </p>
+        <p>
+            <input type="submit" value="Enviar Dados">
+        </p>
+    </form>
+</body>
+</html>

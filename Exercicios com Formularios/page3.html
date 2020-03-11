@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 3</title>
+</head>
+<body>
+    <!-- readonly não permite alterar-->
+    <form action="formulario">
+        <p>
+            <label>
+                Nome: <input type="text" name="nome" placeholder="nome completo">
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Data de Nascimento: <input type="date" name="data"
+                min="1910-01-01">
+            </label>            
+        </p>
+        <p>
+            Sexo:
+            <select name="sexo"> <!--o que estiver no value vai ser salvo no banco, selected para deixar marccado-->
+                <option value="">Escolha  o Sexo</option>
+                <option value="Masc">Masculino</option>
+                <option value="Fem">Feminino</option>
+
+            </select>
+        </p>
+        <p>
+
+            <label>
+                Endereço: <br>
+                Rua:<input type="text" name="end">
+                Número: <input type="number" name="numero" col="10">
+                Bairro: <input type="text" name="bairro">
+            </label>            
+        </p>
+
+        <p>
+            <label>
+                Estado:
+                <select name="estado"> <!--o que estiver no value vai ser salvo no banco, selected para deixar marccado-->
+                    <option value="">Escolha um Estado</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </select>
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Cidade: <input type="text" name="cidade">
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Email: <input type="email" name="email">
+            </label>
+        </p>
+        
+        <p>
+            <label>
+                Telefone: <input type="tel" name="telefone"
+                required>
+            </label>
+        </p>
+        
+        <fieldset>
+            <legend>Áreas de Interesse</legend>
+            <p>
+                <label>
+                    <input type="checkbox" name="comput"
+                    value="Comput"
+                    checked>Computação
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" name="engenharia"
+                    value="engenharia">Engenharia
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" name="historia"
+                    value="Historia">História
+                </label>
+            </p>
+            
+        </fieldset>
+
+        <p>
+            <label>
+                Usuário: <input type="text" name="usuário">
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Senha: <input type="password" name="senha"> <!--md5 para criptografar-->
+            </label>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar dados">
+            <input type="reset" value="Limpar dados">
+        </p>
+
+        
+    </form>
+</body>
+</html>

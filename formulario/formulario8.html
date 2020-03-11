@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <script type="text/javascript">
+        function ola(){
+            alert("Seja bem vindo ao meu site!");
+        }
+    </script>
+</head>
+<body>
+    <p> <!--typr="button" usado para chamar função do javascript-->
+        <button type="button" onclick="ola()">
+            Clique aqui
+        </button>
+    </p>
+    <p>
+        <button type="button" onclick="ola()">
+            <img src="images/whats.png" alt="Botão">
+        </button>
+    </p>
+
+    <form action="">
+        <p> <!--Com o label para selecionar o local de entrada. usando fora "for" isar id -->
+            <label for="msg">
+                Mensagem:
+            </label>
+            <textarea name="mensagem" 
+                cols="30" rows="10" id="msg">
+            </textarea>
+            
+        </p>
+        <p>
+            <input type="submit" value="Enviar dados">
+        </p>
+    </form>
+
+    <p>
+        <details open="open">
+            <summary>Exibir/Ocultar</summary>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facere aut ut dicta iste autem hic mollitia voluptatum libero ad. Praesentium facere ipsa quo? Error nihil a eligendi quod in.</p>
+        </details>
+    </p>
+
+</body>
+</html>
