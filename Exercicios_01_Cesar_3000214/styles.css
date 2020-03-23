@@ -1,0 +1,57 @@
+/*Class for tags: button, a, input */
+body{
+    background-color: rgb(216, 207, 207);
+    font-family: Calibri;
+    text-align: justify;
+    font-size: 22pt;
+    color:midnightblue;
+
+}
+
+.btn{
+    font-family: arial;
+    font-size: 14pt;
+    text-transform: uppercase;
+    font-weight: 700px;
+    border: none;
+    border:0px solid;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+.btn-margin{
+    float:left;
+}
+.btn-purple{
+    background:rgb(146, 118, 223);
+    color: #0b0d2cde;
+    box-shadow: 0 5px 0 rgba(117, 116, 116, 0.637);
+}
+/*efeito mouse em cima do botão*/
+.btn-purple:hover{
+    background:rgb(216, 207, 207);
+    color: #000000;
+    box-shadow: 0 5px 0 rgba(59, 58, 58, 0.637);
+}
+.btn-purple:active{
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+}
+
+.btn-green{
+    background: green;
+    color: #fff;
+    box-shadow: 0 5px 0 #006000;
+}
+.btn-green:hover{
+    background: green;
+    color: #fff;
+    box-shadow: 0 5px 0 #003f00;
+}
+.btn-green:active{
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+}

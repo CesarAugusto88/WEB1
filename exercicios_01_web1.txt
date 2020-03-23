@@ -1,0 +1,26 @@
+Cesar Augusto de Moraes Costa - 3000214
+data: 18/03/2020
+Exercícios de Web I
+1 - Cite e explique as formas de usar um código CSS.
+	As formas de usar o código css, que é folhas de estilo em cascata, para adicionar estilos (fontes, cores, espaçamento etc) aos documentos web, são definidas pela regra css que utiliza: seletor{propriedade:valor;}
+	O seletor é a Tag do elemento da marcação do arquivo HTML, ou uma entidade capaz de definir com precisão em qual lugar da marcação será aplicada a regra CSS.
+	A propriedade e o valor são a "declaração" que determina os parÂmetros de estilização. A propriedade define qual é a característica do seletor a ser estilizada. O valor é a quantificação ou a qualificação da propriedade.
+	Uma regra CSS poderá conter várias declarações separadas por ponto e vírgula.
+	A regra css pode ser definida dentro da tag head no mesmo arquivo html ou em um arquivo externo com extensão css e o link chamando o tipo e o caminho do arquivo no head, além disso pode ser declarado a regra css dendo da tag html. Essas regras são nomeadas modo em linha, modo interno e modo externo.
+2 - Desenvolva um site em HTML e CSS utilizando um tema relacionado à
+tecnologia que contemple os seguintes critérios:
+	a. Página 1 – Página Principal contendo:
+		i. Textos
+		ii. Lista ordenada
+		iii. Links
+	b. Página 2 – Página contendo:
+		i. Textos
+		ii. Lista não ordenada
+	c. Página 3 – Página contendo:
+		i. Textos
+		ii. Imagens
+	d. Página 4 – Página contendo:
+		i. Formulário de contato
+		e. Todas as páginas deverão conter um link para voltar para a Página
+Principal.
+		f. Utilizar formatação de fontes, textos, cores e fundos nas páginas.

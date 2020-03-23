@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <a class="btn btn-purple btn-margin" href="pagina_principal.html">Página Principal</a>
+    <a class="btn btn-purple btn-margin" href="pagina_2.html">Página 2</a>
+    <a class="btn btn-purple btn-margin" href="pagina_3.html">Página 3</a>
+    <a class="btn btn-purple btn-margin" href="pagina_4.html">Página 4</a>
+    <br>
+    <h1>Página 4</h1>
+    <h2>Formulário de Contato</h2>
+    <!-- readonly não permite alterar-->
+    <form action="formulario">
+        <p>
+            <label>
+                Nome: <br> <input style="width: 300px;" type="text" name="nome" placeholder="nome completo">
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Data de Nascimento: <br> <input type="date" name="data"
+                min="1910-01-01">
+            </label>            
+        </p>
+        <p>
+            Sexo: <br>
+            <select name="sexo"> <!--o que estiver no value vai ser salvo no banco, selected para deixar marccado-->
+                <option value="">Escolha  o Sexo</option>
+                <option value="Masc">Masculino</option>
+                <option value="Fem">Feminino</option>
+
+            </select>
+        </p>
+        <p>
+            <label>
+                Email: <input style="margin-left: 35px;" type="email" name="email">
+            </label>
+        </p>
+        
+        <p>
+            <label>
+                Telefone: <input type="tel" name="telefone"
+                required>
+            </label>
+        </p>
+        <fieldset style="width: 700px;">
+            <legend>Endereço</legend>
+            <p>
+                <label>
+                    Rua:<input type="text" name="end">
+                    Número: <input type="number" name="numero" style="width: 40px;">
+                    Bairro: <input type="text" name="bairro">
+                </label>            
+            </p>
+
+            <p>
+                <label>
+                    Estado:
+                    <select name="estado"> <!--o que estiver no value vai ser salvo no banco, selected para deixar marccado-->
+                        <option value="">Escolha um Estado</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                    </select>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    Cidade: <input type="text" name="cidade">
+                </label>
+            </p>
+        </fieldset>
+        
+        <fieldset style="width: 700px;">
+            <legend>Áreas de Interesse</legend>
+            <p>
+                <label>
+                    <input type="checkbox" name="comput"
+                    value="Comput"
+                    checked>Computação
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" name="engenharia"
+                    value="engenharia">Engenharia
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" name="historia"
+                    value="Historia">História
+                </label>
+            </p>
+            
+        </fieldset>
+
+        <p>
+            <label>
+                Usuário: <input type="text" name="usuário">
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Senha: <input style="margin-left: 20px;" type="password" name="senha"> <!--md5 para criptografar-->
+            </label>
+        </p>
+
+        <p>
+            <input class="btn btn-green" type="submit" value="Enviar dados">
+            <input class="btn btn-green" type="reset" value="Limpar dados">
+        </p>
+        
+    </form>
+</body>
+</html>
